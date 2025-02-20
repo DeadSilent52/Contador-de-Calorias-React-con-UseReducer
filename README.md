@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Contador de Calorias con React + TypeScript + Vite con UseReducer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/a3caf4cf-84bd-4fb2-8c1a-0bbc8f8676a1)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Este proyecto es una aplicación interactiva que permite contar calorias, consumo y ejercicio, la cual esta desarrollada con React y TypeScript utilizando UseReducer, tambien se utilizo el framework Tailwind para diseñar una interfaz moderna y eficiente. Utiliza hooks como useState, useEffect, useMemo y custom hooks.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
+- **Seleccionar categoria:** Permite elegir entre diferentes categorías, como alimentación o ejercicio, para clasificar las actividades registradas.
+- **Ingresar actividad:** Permite añadir una nueva actividad con su respectiva categoría y detalles.
+- **Ingresar calorias:** Posibilita introducir la cantidad de calorías consumidas o quemadas según la actividad registrada.
+- **Resumen de calorias:** Muestra un balance general de calorías consumidas y gastadas, ayudando a monitorear el progreso.
+- **Editar actividades:** Permite modificar actividades previamente registradas en caso de errores o ajustes.
+- **Eliminar actividades:** Opción para eliminar una actividad que ya no sea relevante.
+- **Reiniciar aplicacion:** Restablece todos los datos ingresados, dejando la aplicación en su estado inicial.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologías Utilizadas
+-React
+-TypeScript
+-Vite
+-Tailwind CSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Despliegue
+https://proyecto-contador-de-calorias.netlify.app/
